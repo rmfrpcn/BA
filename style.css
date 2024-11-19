@@ -148,6 +148,10 @@ body {
     color: red;
 }
 
+#explanation {
+    font-size: 0.7rem;
+}
+
 #next button {
     margin-top:20px;
     padding: 10px 20px;
