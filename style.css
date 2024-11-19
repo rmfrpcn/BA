@@ -1,0 +1,186 @@
+/* ベーススタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 共通ボックススタイル */
+.box {
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ログイン画面 */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login h1 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#login input {
+    padding: 15px;
+    font-size: 1.1rem;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+#login input:focus {
+    border: 1px solid #007bff;
+}
+
+#login button {
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    max-width: 400px;
+}
+
+#login button:hover {
+    background-color: #0056b3;
+}
+
+/* メニュー画面 */
+#menu h1 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-option {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 90%;
+    max-width: 400px;
+}
+
+.menu-option:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+/* クイズ画面 */
+#quiz h1 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#quiz p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#options button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 90%;
+    max-width: 400px;
+}
+
+#options button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+#result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    display: none;
+    /* 初期状態で非表示 */
+}
+
+#result.correct {
+    color: green;
+}
+
+#result.incorrect {
+    color: red;
+}
+
+#next button {
+    margin-top:20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#top button {
+    margin-top:20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* メディアクエリ（スマートフォン対応） */
+@media (max-width: 768px) {
+    .box {
+        padding: 20px 15px;
+    }
+
+    #login input,
+    #login button,
+    #options button,
+    #next button,
+    #top button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    #quiz h1,
+    #quiz p {
+        font-size: 1.2rem;
+    }
+
+    #result {
+        font-size: 1.3rem;
+    }
+}

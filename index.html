@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAlibrary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- パスワード入力画面 -->
+    <div id="login" class="box">
+        <h1>パスワードを入力してください</h1>
+        <input type="password" id="password" placeholder="パスワード">
+        <button id="submitPassword">送信</button>
+    </div>
+
+    <!-- メニュー画面 -->
+    <div id="menu" class="box" style="display: none;">
+        <h1>問題を選択</h1>
+        <button class="menu-option" data-type="core">コア豆</button>
+    </div>
+
+    <!-- 問題画面 -->
+    <div id="quiz" class="box" style="display: none;">
+        <h1>問題</h1>
+        <p id="question"></p>
+        <div id="options"></div>
+        <div id="answer" style="display: none;">
+            <p id="result" style="display: block;"></p>
+            <p id="A"></p>
+            <p id="explanation"></p>
+            <p id="next"><button onclick="next()">次へ</button></p>
+        </div>
+        <p id="top"><button onclick="nemu()">TOPへ</button></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
