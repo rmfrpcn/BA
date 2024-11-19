@@ -97,6 +97,8 @@ function next() {
 }
 
 function nemu() {
+    answerElement.style.display = "none";
+    optionsElement.style.display = "block";
     menuDiv.style.display = "block";
     quizDiv.style.display = "none";
     num = 0;
