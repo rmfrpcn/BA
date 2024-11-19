@@ -99,4 +99,6 @@ function next() {
 function nemu() {
     menuDiv.style.display = "block";
     quizDiv.style.display = "none";
+    num = 0;
+    countCrrect = 0;
 }
