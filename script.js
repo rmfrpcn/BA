@@ -37,7 +37,7 @@ let quizData = {
         { question: "スターバックスが、標高の高い生産地域のコーヒーを購買する理由は?", options: ["生豆の密度が下がることによって深いローストにも耐える品質になるため", "標高が高いと、病気や害虫に耐性があるコーヒーが育ちやすいため", "より効率的に収穫をするため", "様々な風味が熟成され、味わいが複雑になるため"], correct: 3, explanation: "" },
         { question: "「さび病」への対策としてハシエンダ アルサシア農園が取り組んでいるものは?", options: ["防腐剤の散布", "雨除けネットの設置", "コーヒーの木の根覆いの実施", "耐病性の高い品種の開発"], correct: 3, explanation: "" },
         { question: "C.A.F,Eプラクティスの項目に含まれないものは?", options: ["廃棄物の管理", "森林保全", "福利厚生", "季節労働者の受け入れ規制"], correct: 3, explanation: "" },
-        { question: "C.A.F,Eプラクティスの監査を実施している第三者組織は", options: ["FSC", "SCS", "SCTC", "GCQ"], correct: 2, explanation: "" },
+        { question: "C.A.F,Eプラクティスの監査を実施している第三者組織は", options: ["FSC", "SCS", "SCTC", "GCQ"], correct: 1, explanation: "" },
 
     ]
 };
