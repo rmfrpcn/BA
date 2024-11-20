@@ -2,6 +2,7 @@ let correctPassword = "P1508"; // 正解のパスワード
 
 // 問題データ
 let quizData = {
+        //{ question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
     core: [
         { question: "スターバックス創業当時から販売されるスターバックス最初のブレンドコーヒーは？", options: ["EDB", "HOU", "ESP", "VER"], correct: 1, explanation: "" },
         { question: "HOUと相性の良い風味は?", options: ["りんご、ナッツ、ブルーベリー", "りんご、チョコレート、ナッツ", "チョコレート、ナッツ、ブルーベリー", "チョコレート、りんご、ブルーベリー"], correct: 0, explanation: "" },
@@ -11,11 +12,34 @@ let quizData = {
         { question: "BRKについて、誤ったものは？", options: ["ラテンアメリカ産のブレンド", "コク:Light 酸味:High", "1998年に軽めのローストとして開発", "相性が良い風味はナッツ、リンゴ、ブルーベリー、レモン"], correct: 1, explanation: "コク:MEDIUM, 酸味:High" },
         { question: "相性の良い風味が｢カランツ、ベリー類、グレープフルーツ｣とされているのは？", options: ["BRK", "KEN", "SRN", "CLG"], correct: 1, explanation: "" },
         { question: "GUAについて正しいものは？", options: ["コク:MEDIUM, 酸味:MEDIUM", "半水洗式", "キーワードは｢ナッツやココアを思わせるバランスのとれた味わい｣", "パッケージにはグアテマラの国鳥のホオロジカンムリヅルが描かれている"], correct: 0, explanation: "『2.半水洗式』GUAは水洗式、『3.ナッツやココアを思わせるバランスのとれた味わい』はHOUのキーワード、『4.パッケージにはグアテマラの国鳥のホオロジカンムリヅルが描かれている』グアテマラの黒鳥はケツァール（ホオロジカンムリヅルはウガンダの黒鳥）" },
-        { question: "TYOの相性のよい国味は?", options: ["シナモン、レーズン、オートミール。チョコレート", "ミルクチョコレート、ナッツ", "ミルクチョコレート、ダークチョコレート、カラメル", "シナモン、チョコレート、ナッツ"], correct: 0, explanation: "" },
+        { question: "TYOの相性のよい国味は?", options: ["シナモン、レーズン、オートミール、チョコレート", "ミルクチョコレート、ナッツ", "ミルクチョコレート、ダークチョコレート、カラメル", "シナモン、チョコレート、ナッツ"], correct: 0, explanation: "" },
         { question: "この国で生産されるコーヒーのうち、約半分は国内消費のために確保されます。毎日様式としてのコーヒーセレモニーが楽しまれ。コーヒーの木が今でも森の中で自生しているのもこの日の特徴です。この国は次のうちどれでしょう", options: ["ケニア", "エチオピア", "コロンビア", "インドネシア"], correct: 1, explanation: "" },
         { question: "BNAのスリーレターは\"Bunna dabo naw\"が由来である。その意味は?", options: ["眠りを防ぐもの", "コーヒー豆", "〜の間", "コーヒーは我々にとってパンである"], correct: 3, explanation: "" },
-        //{ question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "コア豆のストーリーのうち、誤っているものは?", options: ["LNBにはラテンアメリカの農園でよく見られるハチドリが描かれている", "EDBはよりマイルドなコーヒーを求めるお客様のために1998年に開発された", "HOUは1971年に発売されたスターバックス最初のブレンドコーヒー", "VERは1975年にシアトルのあるレストランのために開発された"], correct: 1, explanation: "よりマイルドなコーヒーを求めるお客様のために1998年に開発されたのはBRK" },
+        { question: "次のうちポストローストブレンドのものは?", options: ["BRK", "HOU", "VER", "ESP"], correct: 2, explanation: "" },
+        { question: "FREのコーヒー豆の重量は、スターバックスローストによっておよそどのくらい減ると言われている?", options: ["14%", "18%", "20%", "25%"], correct: 0, explanation: "" },
+        { question: "スターバックスで提供しているCBRについて正しいものは?", options: ["CBRのローストレベルはDARK", "CBRはラテンアメリカ産とアジア/太平洋産のブレンド", "マルコニックグラインダー#!0番で挽いた豆を使う", "常温で14時間かけて抽出を行う"], correct: 3, explanation: "『1.CBRのローストレベルはDARK』CBRはMEDIUMロースト、『2.CBRはラテンアメリカ産とアジア/太平洋産のブレンド』CBRはラテンアメリカ産とアフリカ産のブレンド、『3.マルコニックグラインダー#!0番で挽いた豆を使う』正しくは#8番" },
+        { question: "ディカフェコーヒーについて正しいものは?", options: ["DES/DHOはスイスウォータープロセスを使用している", "ダイレクトコンタクト法ではカーポンフィルターを使用する", "ディカフェの工程は生豆の状態で行われる", "DHO/DESはプレスサービスでの提供はできない"], correct: 2, explanation: "『4.DHO/DESはプレスサービスでの提供はできない』+50円で対応可能" },
+        { question: "ESP/DESについて誤っているものは?", options: ["コク:FULL, 酸味:LOW", "ESPは1975年に焙煎が始まった", "加工法は水洗式/半水洗式", "ラテンアメリカ産とアジア/太平洋産のブレンド"], correct: 0, explanation: "『1.コク:FULL, 酸味:LOW』正しくは、コク:FULL, 酸味:MEDIUM" },
+        { question: "DHOやDESに使用されているカフェイン除去法は?", options: ["ダイレクトコンタクト法", "コンタクトダイレクト法", "スイスウォータープロセス", "二酸化炭素抽出法"], correct: 3, explanation: "" },
+        { question: "ITAのパッケージに描かれている、イタリアとの繋がりを表現しているモチーフは?", options: ["ヴェスパ", "フルール・ド・リス", "バラ", "エスプレッソマシン"], correct: 0, explanation: "" },
+
     ],
+    cafe: [
+        { question: "スターバックスがエシカルな調達99を達成したのは?", options: ["2010年", "2012年", "2015年", "2018年"], correct: 2, explanation: "" },
+        { question: "「この事業は体は売買するコーヒーに関わる領収書や請求書を保管している」この指導は、C.A.F.Eプラクティスのどの項目に当てはまるでしょう?", options: ["品質基準", "経済的な透明性", "社会的責任", "環境面でのリーダーシップ"], correct: 1, explanation: "" },
+        { question: "STCTの役割として正しいものは?", options: ["コーヒー農家やサプライヤーへの具体的なサポート", "すべてのサプライヤーとの取引関係の管理", "グローバルなビジネスニーズの洗い出し", "ブレンドレシピの作成・維持"], correct: 1, explanation: "" },
+        { question: "「スターバックスの第1号となるFSCが開設された国は?」", options: ["ブラジル", "ルワンダ", "コスタリカ", "中国"], correct: 2, explanation: "" },
+        { question: "「C.A.F.Eプラクティス」における「C.A.F.E」とは?", options: ["Coffee and Farmer Equity", "Coffee and Farmer Exchange", "Coffee and Farmer Equirium", "Coffee and Farmer Engagement"], correct: 0, explanation: "" },
+        { question: "グローバルにおけるスターバックスのコーヒーの調達を担当しているチームはどこにある?", options: ["アメリカ", "オランダ", "スイス", "コスタリカ"], correct: 2, explanation: "" },
+        { question: "コーヒーに関する土壌管理と栽培の専門家は?", options: ["コーヒースペシャリスト", "アグロノミスト", "エクスポーター", "ファーマーサポートセンター"], correct: 1, explanation: "" },
+        { question: "生豆サンプリングのうち、出荷前サンプリングについて正しいものは?", options: ["焙煎工場で実施される", "出荷の承認がされるのは50%ほどである", "6カップでテイスティングされ、1カップの欠陥でも不可", "生産地で焙煎してから輸送される"], correct: 2, explanation: "" },
+        { question: "スターバックスが、標高の高い生産地域のコーヒーを購買する理由は?", options: ["生豆の密度が下がることによって深いローストにも耐える品質になるため", "標高が高いと、病気や害虫に耐性があるコーヒーが育ちやすいため", "より効率的に収穫をするため", "様々な風味が熟成され、味わいが複雑になるため"], correct: 3, explanation: "" },
+        { question: "「さび病」への対策としてハシエンダ アルサシア農園が取り組んでいるものは?", options: ["防腐剤の散布", "雨除けネットの設置", "コーヒーの木の根覆いの実施", "耐病性の高い品種の開発"], correct: 3, explanation: "" },
+        { question: "C.A.F,Eプラクティスの項目に含まれないものは?", options: ["廃棄物の管理", "森林保全", "福利厚生", "季節労働者の受け入れ規制"], correct: 3, explanation: "" },
+        { question: "C.A.F,Eプラクティスの監査を実施している第三者組織は", options: ["FSC", "SCS", "SCTC", "GCQ"], correct: 2, explanation: "" },
+
+    ]
 };
 
 let currentQuizType = "";
