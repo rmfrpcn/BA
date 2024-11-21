@@ -37,7 +37,7 @@ let quizData = {
         { question: "シアトルのレストラン「Canlis」のチョコレートケーキやクレームブリュレに合うように開発されたのは?", options: ["GCC", "VER", "XME", "TRB"], correct: 0, explanation: "" },
         { question: "FY24 SAKURAにて販売したSSBのコク、酸味について正しいものは?", options: ["コク:MEDIUM, 酸味:HIGH", "コク:MEDIUM, 酸味:MEDIUM", "コク:FULL, 酸味:LOW", "コク:FULL, 酸味:MEDIUM"], correct: 1, explanation: "" },
         { question: "FY24 SAKURAにて販売したSSBと相性の良い風味は?", options: ["さくら、抹茶", "さくら、ベリー", "さくら、チョコレート", "さくら、ストーンフルーツ"], correct: 2, explanation: "" },
-        { question: "FY24 SAKURAにて販売したSSBのキーワードは?", options: ["ダークテェリーやスパイスを思わせる風味", "キャンディードピーカンやハーブを思わせる風味", "ブラックテェリーやベーキングスパイスを思わせる風味", "ハニーブッシュやココアを思わせる風味"], correct: 3, explanation: "" },
+        { question: "FY24 SAKURAにて販売したSSBのキーワードは?", options: ["ダークチェリーやスパイスを思わせる風味", "キャンディードピーカンやハーブを思わせる風味", "ブラックチェリーやベーキングスパイスを思わせる風味", "ハニーブッシュやココアを思わせる風味"], correct: 3, explanation: "" },
         //{ question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
 
     ],
