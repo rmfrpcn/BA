@@ -29,7 +29,7 @@ let quizData = {
     cafe: [
         { question: "スターバックスがエシカルな調達99を達成したのは?", options: ["2010年", "2012年", "2015年", "2018年"], correct: 2, explanation: "" },
         { question: "「この事業体は売買するコーヒーに関わる領収書や請求書を保管している」この指導は、C.A.F.Eプラクティスのどの項目に当てはまるでしょう?", options: ["品質基準", "経済的な透明性", "社会的責任", "環境面でのリーダーシップ"], correct: 1, explanation: "" },
-        { question: "STCTの役割として正しいものは?", options: ["コーヒー農家やサプライヤーへの具体的なサポート", "すべてのサプライヤーとの取引関係の管理", "グローバルなビジネスニーズの洗い出し", "ブレンドレシピの作成・維持"], correct: 1, explanation: "" },
+        { question: "SCTCの役割として正しいものは?", options: ["コーヒー農家やサプライヤーへの具体的なサポート", "すべてのサプライヤーとの取引関係の管理", "グローバルなビジネスニーズの洗い出し", "ブレンドレシピの作成・維持"], correct: 1, explanation: "" },
         { question: "「スターバックスの第1号となるFSCが開設された国は?」", options: ["ブラジル", "ルワンダ", "コスタリカ", "中国"], correct: 2, explanation: "" },
         { question: "「C.A.F.Eプラクティス」における「C.A.F.E」とは?", options: ["Coffee and Farmer Equity", "Coffee and Farmer Exchange", "Coffee and Farmer Equirium", "Coffee and Farmer Engagement"], correct: 0, explanation: "" },
         { question: "グローバルにおけるスターバックスのコーヒーの調達を担当しているチームはどこにある?", options: ["アメリカ", "オランダ", "スイス", "コスタリカ"], correct: 2, explanation: "" },
