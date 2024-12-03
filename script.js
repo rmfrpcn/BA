@@ -2,7 +2,7 @@ let correctPassword = "P1508"; // 正解のパスワード
 
 // 問題データ
 let quizData = {
-        //{ question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+    //{ question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
     core: [
         { question: "スターバックス創業当時から販売されるスターバックス最初のブレンドコーヒーは？", options: ["EDB", "HOU", "ESP", "VER"], correct: 1, explanation: "" },
         { question: "HOUと相性の良い風味は?", options: ["りんご、ナッツ、ブルーベリー", "りんご、チョコレート、ナッツ", "チョコレート、ナッツ、ブルーベリー", "チョコレート、りんご、ブルーベリー"], correct: 0, explanation: "" },
@@ -25,7 +25,7 @@ let quizData = {
         { question: "ITAのパッケージに描かれている、イタリアとの繋がりを表現しているモチーフは?", options: ["ヴェスパ", "フルール・ド・リス", "バラ", "エスプレッソマシン"], correct: 0, explanation: "" },
 
     ],
-    promotion:[
+    promotion: [
         { question: "FY24 Win Ph1にて販売したGCCのコク、酸味について正しいものは?", options: ["コク:MEDIUM, 酸味:MEDIUM", "コク:MEDIUM, 酸味:HIGH", "コク:FULL, 酸味:MEDIUM", "コク:FULL, 酸味:HIGH"], correct: 1, explanation: "" },
         { question: "FY24 Win Ph1にて販売したGCCと相性の良い風味は?", options: ["シトラス、ナッツ、ソフトチーズ", "はちみつ、シナモン、ココア", "キャラメル、チョコレート、ナッツ", "チョコレート、キャラメル"], correct: 0, explanation: "" },
         { question: "FY24 Win Ph1にて販売したGCCのキーワードは?", options: ["ココアやスパイスを思わせる洗練された風味", "ハニーブッシュやココアを思わせる風味", "メイヤーレモンとカカオニブを思わせる風味", "ヘーゼルナッツやドライフルーツを思わせる風味"], correct: 2, explanation: "" },
@@ -41,7 +41,7 @@ let quizData = {
         //{ question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
 
     ],
-    cafe: [
+    ethical: [
         { question: "スターバックスがエシカルな調達99を達成したのは?", options: ["2010年", "2012年", "2015年", "2018年"], correct: 2, explanation: "" },
         { question: "「この事業体は売買するコーヒーに関わる領収書や請求書を保管している」この指導は、C.A.F.Eプラクティスのどの項目に当てはまるでしょう?", options: ["品質基準", "経済的な透明性", "社会的責任", "環境面でのリーダーシップ"], correct: 1, explanation: "" },
         { question: "SCTCの役割として正しいものは?", options: ["コーヒー農家やサプライヤーへの具体的なサポート", "すべてのサプライヤーとの取引関係の管理", "グローバルなビジネスニーズの洗い出し", "ブレンドレシピの作成・維持"], correct: 1, explanation: "" },
@@ -50,12 +50,43 @@ let quizData = {
         { question: "グローバルにおけるスターバックスのコーヒーの調達を担当しているチームはどこにある?", options: ["アメリカ", "オランダ", "スイス", "コスタリカ"], correct: 2, explanation: "" },
         { question: "コーヒーに関する土壌管理と栽培の専門家は?", options: ["コーヒースペシャリスト", "アグロノミスト", "エクスポーター", "ファーマーサポートセンター"], correct: 1, explanation: "" },
         { question: "生豆サンプリングのうち、出荷前サンプリングについて正しいものは?", options: ["焙煎工場で実施される", "出荷の承認がされるのは50%ほどである", "6カップでテイスティングされ、1カップの欠陥でも不可", "生産地で焙煎してから輸送される"], correct: 2, explanation: "" },
-        { question: "スターバックスが、標高の高い生産地域のコーヒーを購買する理由は?", options: ["生豆の密度が下がることによって深いローストにも耐える品質になるため", "標高が高いと、病気や害虫に耐性があるコーヒーが育ちやすいため", "より効率的に収穫をするため", "様々な風味が熟成され、味わいが複雑になるため"], correct: 3, explanation: "" },
-        { question: "「さび病」への対策としてハシエンダ アルサシア農園が取り組んでいるものは?", options: ["防腐剤の散布", "雨除けネットの設置", "コーヒーの木の根覆いの実施", "耐病性の高い品種の開発"], correct: 3, explanation: "" },
         { question: "C.A.F,Eプラクティスの項目に含まれないものは?", options: ["廃棄物の管理", "森林保全", "福利厚生", "季節労働者の受け入れ規制"], correct: 3, explanation: "" },
         { question: "C.A.F,Eプラクティスの監査を実施している第三者組織は", options: ["FSC", "SCS", "SCTC", "GCQ"], correct: 1, explanation: "" },
+        { question: "C.A.F.E.プラクティスは，サプライヤーに期待される最低要件を定める\"認証システム\"である。○ or ×", options: ["○", "×", "---", "---"], correct: 1, explanation: "サステナブルな コーヒー生産におけるベストプラクティスを通じた「持続的な向上を促す包括的なアプローチ」" },
+        { question: "C.A.F.E.プラクティスを構成する4つの要素の必須項目は?", options: ["「人質基準」と「社会的責任」", "「経済的な透明性」と「環境面のリーダーシップ」", "「社会的責任」と「環境面のリーダーシップ」", "「品質基準」と「経済的な透明性」"], correct: 3, explanation: "" },
+        { question: "スターバックスのコーヒーの品質は、20人にも満たないチームにより、年間(　)カップ以上ものコーヒーテイス ティングを行うことにより守られている", options: ["1000", "10万", "25万", "50万"], correct: 2, explanation: "" },
+        { question: "社会的責任でなにより大切なことは?", options: ["人", "時間", "お金", "コーヒー豆"], correct: 0, explanation: "" },
+        { question: "スターバックスは、コーヒーを購買し、焙煎するまでの工程でサンプルのテイスティングを何回行う？", options: ["1", "3", "5", "10"], correct: 1, explanation: "オファーサンプル、出荷前サンプル、到着サンプルの３回" },
+        { question: "スターバックスが、標高の高い生産地域のコーヒーを購買する理由は?", options: ["生豆の密度が下がることによって深いローストにも耐える品質になるため", "標高が高いと、病気や害虫に耐性があるコーヒーが育ちやすいため", "より効率的に収穫をするため", "様々な風味が熟成され、味わいが複雑になるため"], correct: 3, explanation: "" },
+        { question: "「さび病」への対策としてハシエンダ アルサシア農園が取り組んでいるものは?", options: ["防腐剤の散布", "雨除けネットの設置", "コーヒーの木の根覆いの実施", "耐病性の高い品種の開発"], correct: 3, explanation: "" },
+        { question: "1本のコーヒーの木から250g煎りのコーヒーは何袋分採れる?", options: ["2", "4", "8", "10"], correct: 0, explanation: "" },
+        { question: "コーヒーのチェリーが収穫できるまでにどれくらいの時間がかかる?", options: ["3~5ヶ月", "1~2年", "3~5年", "7~10年"], correct: 2, explanation: "" },
+        { question: "コーヒーは花が咲いてから収穫できるまでどれくらいかかる?", options: ["半年", "9ヶ月", "1年", "3年"], correct: 1, explanation: "" },
+        { question: "コーヒーの栽培や流通で生計を立てている人は世界中にどれくらいいる?", options: ["250万人", "1000万人", "2500万人", "5000万人"], correct: 2, explanation: "" },
+        { question: "スターバックスがもっとも多くコーヒー豆を購買している地域は?", options: ["ラテンアメリカ", "アフリカ", "アジア/太平洋", "---"], correct: 0, explanation: "" },
+        { question: "C.A.F.E.プラクティスは2016年時点で、何か国語展開しているでしょうか", options: ["６カ国", "30カ国", "70カ国", "150カ国"], correct: 0, explanation: "英語、ポルトガル語、フランス語、 スペイン語、インドネシア語、中国語" },
+        { question: "C.A.F.E.プラクティスにはチェック項目がいくつある?", options: ["4", "46", "145", "188"], correct: 3, explanation: "" },
 
-    ]
+    ],
+    method: [
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        /*
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+        { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
+
+*/
+
+    ],
 };
 
 let currentQuizType = "";
