@@ -83,7 +83,6 @@ let quizData = {
         { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
         { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
         { question: "", options: ["", "", "", ""], correct: 2, explanation: "" },
-
 */
 
     ],
